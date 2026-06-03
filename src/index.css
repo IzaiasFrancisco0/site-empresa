@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Barlow', sans-serif;
+}
+
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-cond {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.hero-bg {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.3) 40%,
+      rgba(0,0,0,0.8) 100%
+    ),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')
+    center/cover no-repeat;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(220,38,38,0.25);
+}
+
+.red-line {
+  background: linear-gradient(90deg, #dc2626, #ef4444, #dc2626);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px #dc2626;
+  color: transparent;
+}
